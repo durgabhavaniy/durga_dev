@@ -1,0 +1,134 @@
+
+Branching in GIT
+====================
+We can create multiple branches and work on them seperately
+Eg: a developer creates a seperate branch for every sprint
+sprint1 sprint2 sprint3 etc and work on them seperately
+Later he can connect with the master branch and merge it
+
+By default the control of git is on the mster branch
+
+To find the list of all available branches
+git branch
+To find list of all branches(local and remote)
+git branch -a
+To create a branch
+git branch branchname
+To move into  a branch
+git checkout branchname
+To merge a branch with the master branch
+1 checkout to the master branch
+  git checkout master
+  git merge branchname
+To delete a branch
+  git branch -d branchname
+To delete a remote branch
+  git branch -dr branchname
+
+
+git clone
+git fetch 
+git pull
+
+
+git clone will download the complete repository
+from the git hub.It will also create a .git folder
+ie it initilizes the pwd as a git repository
+
+Syntax
+     git clone git_remote_repo_url
+To find the remote remo url
+1 open github.com
+2 login into our account
+3 click on repositories
+4 clcik on the repo that should be downloaded
+5 click on "Clone or Download"
+6 copy the url
+7 use it with the above git clone command
+
+git fetch will download only the modified files and
+it will store on a remote branch..we should checout to that
+branch and see the modifications...once we are satisified
+with the changes we can merge this remote branch with master
+branch
+Modify some file on the github
+1 git fetch
+2 git branch -a
+3 git checkout remote_branch_name
+4 we will find those changes in the file present in the
+  remote branch but the same file on master branch
+  will not ahve those changes
+5 to merge this remote branch with master branch
+  checkout to master branch
+   git checkout master
+   git merge remote_branch_name
+
+git pull will download the changes and automatically
+merge with master branch
+Syntax: git pull
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+
+
+Working directory: is the default folder where the developer
+   create his code.The files present in working directory
+   initially are called untracked files...ie git has no
+   access on those files
+
+Staggging area: is a temporary buffer zone where the data will
+   initially sent.
+
+Git local repository:From the stagging area files are 
+   commited into LR where version controlling is done
+
+To send files into the stagging area
+  git add filename
+
+To send multiple files
+  git add file1 file2 file3
+
+To send all the files and folders into the stagging area
+  git add .
+
+
+To bring files from stagging area to working directoy
+git rm --cached filename
+git reset filename
+
+.gitignore
+=================
+If we want some files to be totally ignored by git
+we can place their names in a hidden file called
+.gitignore
+
+ cat > .gitignore
+   file1
+   file2
+   file3
+ ctr+d
+
+if we file git status command it will not list
+file1,file2,file3 either in stagging section or in
+untracked files section
+
+To send files from stagging area to git lr
+git commit -m "Some message"
+
+To find complete info about all the commit that we have done
+git log
+
+To upload the lr into git hub
+1 open github.com
+2 create a free acount
+3 Sign in into that account
+4 click on + on top right corner
+5 Click on new repository
+6 Give repository name 
+7 Click on create repository
+8 go to "push an existing repository from the command line"
+9 copy the first command
+  git remote add origin url_of_git_repo
+7 git push -u origin master
+8 Enter username and passwd of github account
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
